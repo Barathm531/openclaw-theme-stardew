@@ -7,6 +7,11 @@
 </p>
 
 **OpenClaw 的星露谷物语风格主题包** - 一键安装四季像素风格主题到你的 OpenClaw 项目中。
+<img width="1236" height="789" alt="截屏2026-02-23 22 40 18" src="https://github.com/user-attachments/assets/c7f86b01-2500-4fdc-b990-31022e0cb076" />
+<img width="1236" height="789" alt="截屏2026-02-23 22 40 52" src="https://github.com/user-attachments/assets/93490b3a-db15-4eee-8b28-3de9fd081a37" />
+<img width="1236" height="789" alt="截屏2026-02-23 22 40 36" src="https://github.com/user-attachments/assets/6204980a-c3b8-4e70-84b5-0dee11d30b9a" />
+<img width="1236" height="789" alt="截屏2026-02-23 22 40 33" src="https://github.com/user-attachments/assets/06293514-0abe-429c-a4ae-5d395aa04f17" />
+<img width="1236" height="789" alt="截屏2026-02-23 22 40 30" src="https://github.com/user-attachments/assets/acd99152-634f-4969-a5a3-501a0599025f" />
 
 ## 功能特点
 
