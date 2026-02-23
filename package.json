@@ -1,44 +1,61 @@
 {
-  "name": "stardew-valley-theme",
+  "name": "openclaw-theme-stardew",
   "version": "1.0.0",
-  "description": "🎮 星露谷物语风格像素主题皮肤 - 一款受《星露谷物语》启发的像素艺术 CSS 主题",
-  "main": "css/stardew-theme.css",
-  "style": "css/themes/*.css",
+  "description": "🌾 OpenClaw 星露谷物语主题包 - 一键安装四季像素风格主题",
+  "main": "scripts/install.js",
+  "types": "types/index.d.ts",
   "keywords": [
+    "openclaw",
     "stardew-valley",
-    "pixel-art",
     "theme",
-    "css",
-    "pixel-font",
-    "retro",
-    "game",
-    "farm",
-    "像素",
-    "游戏风格"
+    "pixel-art",
+    "css-theme",
+    "四季主题",
+    "像素风格"
   ],
   "author": "andyhuo520",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/andyhuo520/stardew-valley-theme.git"
+    "url": "https://github.com/andyhuo520/openclaw-theme-stardew.git"
   },
   "bugs": {
-    "url": "https://github.com/andyhuo520/stardew-valley-theme/issues"
+    "url": "https://github.com/andyhuo520/openclaw-theme-stardew/issues"
   },
-  "homepage": "https://github.com/andyhuo520/stardew-valley-theme#demo"
+  "homepage": "https://github.com/andyhuo520/openclaw-theme-stardew#readme",
   "files": [
     "css/**/*",
+    "fonts/**/*",
     "js/**/*",
-    "assets/**/*",
-    "demo/**/*",
-    "*.md",
-    "package.json"
+    "scripts/**/*",
+    "types/**/*",
+    "patches/**/*",
+    "*.md"
   ],
-  "ignore": [
-    "**/.*",
-    "**/*.zip",
-    "**/__MACOSX",
-    "*.log",
-    "node_modules"
-  ]
+  "scripts": {
+    "postinstall": "node scripts/install.js",
+    "install:theme": "node scripts/install.js",
+    "uninstall": "node scripts/uninstall.js"
+  },
+  "peerDependencies": {
+    "openclaw": ">=1.0.0"
+  },
+  "peerDependenciesMeta": {
+    "openclaw": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "openclaw": {
+    "themePackage": true,
+    "themes": [
+      "stardew-spring",
+      "stardew-summer",
+      "stardew-autumn",
+      "stardew-winter"
+    ],
+    "defaultTheme": "stardew-spring"
+  }
 }
